@@ -8,22 +8,30 @@
 import SwiftUI
 
 struct NewsItemVIew: View {
+    
+    //MARK: stored properties
+    let image: String
+    let soruce: String
+    let headline: String
+    let tiemPosted:String
+    
+    //MARK: Computed properties
     var body: some View {
         VStack(alignment: .leading){
-            Image("Farming")
+            Image(image)
                 .resizable()
                 .scaledToFit()
-            Image("The Globe and Mail")
+            Image(soruce)
                 .resizable()
                 .scaledToFit()
             
-            Text("Maritime farmers holding breath as record-dry spring wings region")
+            Text(headline)
                 .font(.title)
                 .fontWeight(.semibold)
             Divider()
             
             HStack{
-                Text("1h ago")
+                Text(tiemPosted)
                 Spacer()
                 Image(systemName: "ellipsis")
             }

@@ -10,11 +10,11 @@ import SwiftUI
 struct NewsFeedView: View {
     var body: some View {
         ScrollView{
-        NewsItemVIew()
+        NewsItemVIew(image: "Farming", soruce: "Globe and Mail", headline: "", tiemPosted: "")
             
-        NewsItemVIew()
+        NewsItemVIew(image: "", soruce: "", headline: "", tiemPosted: "")
             
-        NewsItemVIew()
+        NewsItemVIew(image: "Sheep", soruce: "TheGaurdian", headline: "New Zealand's ratio of sheep to humans at lowest point in 170 years", tiemPosted: "1h ago")
         }
     }
 }
@@ -22,6 +22,5 @@ struct NewsFeedView: View {
 struct NewsFeedView_Previews: PreviewProvider {
     static var previews: some View {
         NewsFeedView()
-            .preferredColorScheme(.dark)
     }
 }
