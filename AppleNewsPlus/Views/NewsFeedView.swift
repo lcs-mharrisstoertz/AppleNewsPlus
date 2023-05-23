@@ -10,31 +10,12 @@ import SwiftUI
 struct NewsFeedView: View {
     var body: some View {
         ScrollView{
+        NewsItemVIew()
             
+        NewsItemVIew()
+            
+        NewsItemVIew()
         }
-        VStack(alignment: .leading){
-            Image("Farming")
-                .resizable()
-                .scaledToFit()
-            Image("The Globe and Mail")
-                .resizable()
-                .scaledToFit()
-            
-            Text("Maritime farmers holding breath as record-dry spring wings region")
-                .font(.title)
-                .fontWeight(.semibold)
-            Divider()
-            
-            HStack{
-                Text("1h ago")
-                Spacer()
-                Image(systemName: "ellipsis")
-            }
-            .padding([.horizontal, .bottom])
-            
-        }
-        .background(Color("DarkGrey"))
-        .cornerRadius(25.0)
     }
 }
 
