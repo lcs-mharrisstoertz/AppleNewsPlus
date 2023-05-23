@@ -9,6 +9,9 @@ import SwiftUI
 
 struct NewsFeedView: View {
     var body: some View {
+        ScrollView{
+            
+        }
         VStack(alignment: .leading){
             Image("Farming")
                 .resizable()
